@@ -1,21 +1,13 @@
-// const Hello = function () {};
-
-import styles from './Hello.module.css';
-
 export default function Hello() {
+	function showName() {
+		console.log('Mike');
+	}
+
 	return (
 		<div>
-			<h1
-				style={{
-					color: '#f00',
-					borderRight: '2px solid #000',
-					marginBottom: '30px',
-					opacity: 0.5,
-				}}
-			>
-				Hello
-			</h1>
-			<div className={styles.box}>Hello</div>
+			<h1>Hello</h1>
+			<button onClick={showName}>Show name</button>
+			<button>Show age</button>
 		</div>
 	);
 }
